@@ -1,0 +1,88 @@
+.header
+	position: fixed
+	left: 0
+	top: 60px
+	z-index: 2
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	&-logo
+		height: auto
+	&-wrapper
+		max-width: 1600px
+		width: 90%
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-item	
+		position: relative
+		height: 30px
+		font-size: 22px
+		line-height: 30px
+		+reg
+		color: #ffffff
+		border-bottom: 1px solid transparent
+		text-decoration: none
+		transition: 0.3s
+		cursor: pointer
+		&:hover
+			border-bottom: 1px solid #ffffff
+		&-active
+			border-bottom: 1px solid #ffffff
+		&:nth-child(4)
+			&:hover
+				border-bottom: 1px solid transparent
+				.header-modal
+					display: flex
+	&-lang
+		display: flex
+		position: relative
+		&__item
+			+reg
+			color: #ffffff
+			cursor: pointer
+			font-size: 22px
+			line-height: 30px
+		&__modal
+			position: absolute
+			top: 100%
+			right: 0
+			.header-lang__item
+				margin-top: 15px
+				font-size: 16px
+				line-height: 22px
+	&-modal
+		transition: 0.3s
+		left: 0
+		top: 40px
+		position: absolute
+		padding: 20px
+		border: 1px solid #ffffff
+		display: none
+		flex-direction: column
+		width: 235px
+		&::after
+			content: ""
+			position: absolute
+			left: 15px
+			top: -10px
+			width: 0
+			height: 0
+			border-left: 10px solid transparent
+			border-right: 10px solid transparent
+			border-bottom: 10px solid #ffffff
+		&__item
+			height: 30px
+			font-size: 18px
+			line-height: 24px
+			+reg
+			color: #ffffff
+			border-bottom: 1px solid transparent
+			text-decoration: none
+			transition: 0.3s
+			cursor: pointer
+			&:hover
+				border-bottom: 1px solid #ffffff
+			&:not(:last-child)
+				margin-bottom: 15px

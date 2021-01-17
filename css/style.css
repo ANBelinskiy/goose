@@ -126,7 +126,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 235px;
+  width: 280px;
 }
 .header-modal::after {
   content: "";
@@ -244,18 +244,15 @@ body {
 }
 
 .page {
-  color: red;
   height: 100vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .page:nth-child(1) {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 114, 208, 0.95)), to(rgba(0, 3, 6, 0.95))), url("../img/page1.jpg");
@@ -271,6 +268,12 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(155, 165, 255, 0.95)), to(rgba(0, 10, 96, 0.95))), url("../img/page3.jpg");
   background: linear-gradient(180deg, rgba(155, 165, 255, 0.95) 0%, rgba(0, 10, 96, 0.95) 100%), url("../img/page3.jpg");
   background-size: cover;
+}
+.page-title {
+  color: #ffffff;
+  font-family: "Prata-Regular", sans-serif;
+  font-size: 64px;
+  line-height: 87px;
 }
 
 /*# sourceMappingURL=style.css.map */
